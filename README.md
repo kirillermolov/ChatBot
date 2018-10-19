@@ -17,12 +17,14 @@ Output: 4
 Representation vectors produced by Seq2Seq encoder and memory block are summed and fed into Seq2Seq decoder.
 
 # Prerequisites
- Python 3
- Tensorflow (tested with )
+
+Python 3
+
+Tensorflow (tested with )
 
 # Pretrained version and running the bot
 
-Pretrained model is available from . Unzip and save it in folder saved_model, then run chatbot.py. It accepts following command-line option:
+Pretrained model is available from https://drive.google.com/open?id=1axMZ1UlkW80N1ZeSAOqu0R1C3yVnTxg1. Unzip and save it in folder saved_model, then run chatbot.py. It accepts following command-line option:
 
 * --tf cpu - default, if run with tensorflow
 * --tf gpu - if run with tensorflow-gpu 
