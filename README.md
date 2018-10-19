@@ -1,6 +1,6 @@
 # ChatBot with memory
 
-This is chatbot model build used Seq2Seq model (https://arxiv.org/pdf/1409.3215.pdf) and memory block described in https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_ContextualSLU.pdf. Model is trained on Cornell Movie-Dialogs Corpus, so that 2 first lines of dialog are used to train basic Seq2Seq model, then if dialog have more lines it is divided into memory, input and output parts. E.g. if dialog has 4 lines (1,2,3 and 4), following data is used in training:
+This is chatbot model build used Seq2Seq model (https://arxiv.org/pdf/1409.3215.pdf) and memory block described in https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_ContextualSLU.pdf. Model is trained on Cornell Movie-Dialogs Corpus, so that 2 first lines of dialog are used to train basic Seq2Seq model, then if dialog have more lines it is divided into memory, input and output parts. E.g. if dialog has 4 lines (1, 2, 3 and 4), following data is used in training:
 
 Memory: 1
 Input: 2
@@ -20,7 +20,7 @@ Representation vectors produced by Seq2Seq encoder and memory block are summed a
 
 Python 3
 
-Tensorflow (tested with )
+Tensorflow (tested with 1.8.0)
 
 # Pretrained version and running the bot
 
