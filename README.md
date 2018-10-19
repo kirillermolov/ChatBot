@@ -1,6 +1,6 @@
 # ChatBot with memory
 
-This is chatbot model build used Seq2Seq model (https://arxiv.org/pdf/1409.3215.pdf) and memory block described in https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_ContextualSLU.pdf. Model is trained on Cornell Movie-Dialogs Corpus, so that 2 first lines of dialog are used to train basic Seq2Seq model, then if dialog have more lines it is divided into memory, input and output parts. E.g. if dialog has 4 lines (1, 2, 3 and 4), following data is used in training:
+This is chatbot model build using Seq2Seq model (https://arxiv.org/pdf/1409.3215.pdf) and memory block described in https://www.csie.ntu.edu.tw/~yvchen/doc/IS16_ContextualSLU.pdf. Model is trained on Cornell Movie-Dialogs Corpus, so that 2 first lines of dialog are used to train basic Seq2Seq model, then if dialog have more lines it is divided into memory, input and output parts. E.g. if dialog has 4 lines (1, 2, 3 and 4), following data is used in training:
 
 Memory: 1
 Input: 2
@@ -20,7 +20,7 @@ Representation vectors produced by Seq2Seq encoder and memory block are summed a
 
 Python 3
 
-Tensorflow (tested with 1.8.0)
+Tensorflow (tested with version 1.8.0)
 
 # Pretrained version and running the bot
 
@@ -36,11 +36,11 @@ Download and unzip Cornell Movie-Dialogs Corpus (https://www.cs.cornell.edu/~cri
 
 * --tf cpu/gpu - same as in running the bot, cpu is default
 * --maxvocab - maximum size of vocabulary, vocabulary is formed from training data, default 50000
-* --hidden - number of units in cells used in encoder/decoder,default = 256
+* --hidden - number of units in cells used in encoder/decoder, default = 256
 * --epoch - number of epochs, default =10
 * --batch - size of batch, default = 128 
 * --maxlen - maximum length of sentence in training batch, default = 16
 * --rate - learning rate, default =0.001
-* --dropout, default = 0.5
+* --dropout - dropout, default = 0.5
 * --decrate - training is done with step decay of learning rate, factor of decay, default = 0.5
 * --decstep - epoch step for reducing learning rate, default = 5, i.e. learning rate will be reduced every 5th epoch
