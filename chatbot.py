@@ -32,7 +32,7 @@ saver = tf.train.Saver()
 
 saver.restore(session,"./saved_model/model.ckpt")
 print("")
-print("Welcome to chat with chatbot. The default memory of bot is 3 dialog entries. Type \c to reset memory, type \c and number (e.g. \c 4) to clear memory and declare new size of memory. Type \q to exit program")
+print("Welcome to chat with chatbot. The default memory of bot is 3 dialog lines. Type \c to reset memory, type \c and number (e.g. \c 4) to clear memory and declare new size of memory. Type \q to exit program")
 
 inp = input("You: ")
 while inp != "\q":
